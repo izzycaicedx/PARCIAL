@@ -2,7 +2,7 @@
 public class Principal {
     
      public static void main(String[] args) {
-         Libro libro1 = new Libro("EL PLAN MAESTRO", "Javier Sierra", 4, 1);
+         Libro libro1 = new Libro("EL PLAN MAESTRO", "Javier Sierra", 4, 6);
         libro1.imprimpir();
          
        System.out.println(libro1);
