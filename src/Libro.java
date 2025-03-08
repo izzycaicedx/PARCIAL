@@ -11,21 +11,7 @@ public class Libro {
         this.numEjemPrestados = numEjemPrestados;
     }
 
-  
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public int getNumEjem() {
-        return numEjem;
-    }
-
-    public int getNumEjemPrestados() {
-        return numEjemPrestados;
-    }
-
-    
+ 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
@@ -39,6 +25,24 @@ public class Libro {
         this.autor = autor;
     }
 
+    
+     public String getTitulo() {
+        return titulo;
+    }
+
+    public int getNumEjem() {
+        return numEjem;
+    }
+
+    public int getNumEjemPrestados() {
+        return numEjemPrestados;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    
     public void setNumEjemPrestados(int numEjemPrestados) {
         this.numEjemPrestados = numEjemPrestados;
     }
@@ -60,10 +64,14 @@ public class Libro {
     
        public boolean Devolucion(){
         
-       if (numEjemPrestados > 0 )
+       if (numEjemPrestados > 0 ){
            numEjemPrestados--;
        return true;
+       
        } 
+       return false;
+       
+       }
  
 public String toString (){
     return "Titulo: " + titulo + "Autor: " + autor + "Numeros Ejemplares: " + numEjem + "Numeros ejemplares pretados: " +numEjemPrestados;
