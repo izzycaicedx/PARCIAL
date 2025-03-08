@@ -60,17 +60,28 @@ public class Libro {
     
        public boolean Devolucion(){
         
-       if (numEjemPrestados )
+       if (numEjemPrestados > 0 )
+           numEjemPrestados--;
+       return true;
+       } 
+ 
+public String toString (){
+    return "Titulo: " + titulo + "Autor: " + autor + "Numeros Ejemplares: " + numEjem + "Numeros ejemplares pretados: " +numEjemPrestados;
+            
+            }
+            
+
+
+}
+
+
+
+
+
+         
+
+
+
                
        
-            
-        
-       
-       
-    }
-    
-    
-    
-    
-   
-}
+  
