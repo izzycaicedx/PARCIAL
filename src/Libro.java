@@ -14,6 +14,8 @@ public class Libro {
  
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+        
+        
     }
     
 
@@ -73,8 +75,8 @@ public class Libro {
        
        }
  
-public String toString (){
-    return "Titulo: " + titulo + "Autor: " + autor + "Numeros Ejemplares: " + numEjem + "Numeros ejemplares pretados: " +numEjemPrestados;
+public void imprimpir (){
+    System.out.println("Titulo: " + titulo + "Autor: " + autor + "Numeros Ejemplares: " + numEjem + "Numeros ejemplares pretados: " +numEjemPrestados);
             
             }
             
